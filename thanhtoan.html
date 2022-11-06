@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="utf-8">
+
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Thanhtoan</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminlte.min.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <div class="container">
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/car.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/services.html">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/pricing.html">Bảng giá</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/blog.html">Bài viết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:63342/carbook-master/carbook-master/Contact.html">Liên hệ</a>
+
+            </ul>
+
+            <form class="form-inline mt-2 mt-md-0" method="get" action="search.html">
+                <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm" aria-label="Search"
+                       name="keyword_tensanpham">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="http://localhost:63342/carbook-master/untitled/giohang.html" href="giohang.html">Giỏ hàng</a>
+            </li>
+            <li class="nav-item text-nowrap">
+                <!-- Nếu chưa đăng nhập thì hiển thị nút Đăng nhập -->
+                <a class="nav-link" href="login.html">Đăng nhập</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<main role="main">
+
+    <div class="container mt-4">
+        <form class="needs-validation" name="frmthanhtoan" method="post"
+              action="#">
+            <input type="hidden" name="kh_tendangnhap" value="dnpcuong">
+
+            <div class="py-5 text-center">
+                <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
+                <h2>Thanh toán</h2>
+                <p class="lead">Vui lòng kiểm tra thông tin Khách hàng, thông tin Giỏ hàng trước khi Đặt hàng.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Giỏ hàng</span>
+                        <span class="badge badge-secondary badge-pill">2</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <input type="hidden" name="sanphamgiohang[1][sp_ma]" value="2">
+                        <input type="hidden" name="sanphamgiohang[1][gia]" value="800,000.00">
+                        <input type="hidden" name="sanphamgiohang[1][soluong]" value="2">
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">AirBlade 150</h6>
+                                <small class="text-muted">400,000 x 2</small>
+                            </div>
+                            <span class="text-muted">800,000</span>
+                        </li>
+                        <input type="hidden" name="sanphamgiohang[2][sp_ma]" value="4">
+                        <input type="hidden" name="sanphamgiohang[2][gia]" value="350000.00">
+                        <input type="hidden" name="sanphamgiohang[2][soluong]" value="1">
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Vision</h6>
+                                <small class="text-muted">350,000.00 x 1</small>
+                            </div>
+                            <span class="text-muted">350,000.00</span>
+                        </li>
+                    </ul>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Xác nhận</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Thông tin khách hàng</h4>
+                    <div class="user-login"><a href="/dang-ky.html">Đăng ký tài khoản mua hàng</a> | <a href="/dang-nhap.html">Đăng nhập</a></div>
+                    <label>Mua hàng không cần tài khoản</label>
+                    <div class="form-group"><input class="form-control" placeholder="Họ & Tên" type="text" ng-model="DeliveryName" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Số điện thoại" type="text" ng-model="DeliveryPhone" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Email" type="text" ng-model="DeliveryEmail" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Địa chỉ" type="text" ng-model="DeliveryAddress" /></div>
+                    <div class="form-group">
+
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" ng-model="DeliveryDistrictId"
+                                ng-options="item.Id as item.Name for item in DistrictDeliverys" ng-change="changeDeliveryDistrict()"></select>
+                    </div>
+                </div>
+            </div>
+            <textarea class="form-control" rows="4" placeholder="Ghi chú đơn hàng" ng-model="$parent.Description"></textarea>
+
+
+            <h4 class="mb-3">Hình thức thanh toán</h4>
+
+            <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                    <input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
+                           value="1">
+                    <label class="custom-control-label" for="httt-1">Tiền mặt</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
+                           value="2">
+                    <label class="custom-control-label" for="httt-2">Chuyển khoản</label>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" name="btnDatHang">Đặt
+                hàng</button>
+
+
+        </form>
+
+    </div>
+    <!-- End block content -->
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/popperjs/popper.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.bootstrap4.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="js/adminlte.min.js"></script>
+<script src="js/demo.js"></script>
+<script>
+    $(function () {
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
+</body>
+</html>
